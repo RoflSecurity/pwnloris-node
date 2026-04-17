@@ -53,7 +53,9 @@ node --max-old-space-size=4096 pwnloris.js target.com -c 250 --workers 5
 --https → Use HTTPS (port 443 by default)
 
 Full example:
+```
 Bashnode pwnloris.js example.com -c 700 --workers 12 --https
+```
 
 ## ⚠️ Important Warnings
 
@@ -72,9 +74,7 @@ Always monitor system resources with free -h and htop.
 
 ## 📁 Main Files
 
-pwnloris-final-simple.js → Recommended version (most stable and effective)
-pwnloris-v6.2-final.js → More aggressive experimental version
-
+pwnloris.js
 
 ## 🔮 Future Improvements (Fork it, help us !)
 
