@@ -19,6 +19,9 @@ Complete rewrite of the original Python pwnloris tool, designed to be more effic
 
 ---
 
+<img width="627" height="889" alt="image" src="https://github.com/user-attachments/assets/43825408-9013-4603-b6c0-e6f1078a5c0c" />
+
+
 ## 📊 Real Performance
 
 | Machine                        | Workers | Connections per Worker | Total Connections     |
@@ -34,16 +37,17 @@ Complete rewrite of the original Python pwnloris tool, designed to be more effic
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/RoflSecurity/pwnloris-node.git
-cd pwnloris-node
-2. Quick Start
+git clone https://github.com/RoflSecurity/pwnloris-node.git && cd ~/pwnloris-node
+```
+### 2. Then
 On a powerful VPS:
-Bashulimit -n 65535
-node --max-old-space-size=32768 pwnloris.js target.com -c 800 --workers 16
-On a dev machine / residential IP:
-Bashulimit -n 16384
+```
+ulimit -n 65535 && node --max-old-space-size=32768 pwnloris.js target.com -c 800 --workers 16
+```
+On a dev machine / residential IP / Ur mom's adress:
+```
+ulimit -n 16384
 node --max-old-space-size=4096 pwnloris.js target.com -c 250 --workers 5
-
 ```
 
 ## Available Options
@@ -83,13 +87,15 @@ Always monitor system resources with free -h and htop.
 ## 📁 Main Files
 
 pwnloris.js
+readme.md
+
 
 ## 🔮 Future Improvements (Fork it, help us !)
 
-SOCKS5 / Proxy support
-Automatic Burst & Reset mode
-Smart URL and User-Agent rotation
-Real-time web dashboard
+SOCKS5 / Proxy support ?
+Automatic Burst & Reset mode ?
+Smart URL and User-Agent rotation ?
+Real-time web dashboard ?
 
 
 Made for educational purposes only.
